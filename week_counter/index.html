@@ -1,0 +1,64 @@
+<html>
+<head>
+    <style>
+        p{text-align: center; line-height:1vh}
+	@font-face {
+		font-family: 'Ai Writer Mono';
+		src: url('./iAWriterMonoS-Regular.ttf');
+		font-weight: 400;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Ai Writer Mono Bold';
+		src: url('./iAWriterMonoS-Bold.ttf');
+		font-weight: 400;
+		font-style: bold;
+	}
+    </style>
+</head>
+<body>
+<div id="today" style="text-align: left; font-family: 'Ai Writer Mono Bold', serif; font-size: 14vw"></div>
+<div id="week" style="text-align: left; font-family: 'Ai Writer Mono', serif; font-size: 14vw"></div>
+<div id="code" style="text-align: left; font-family: 'Ai Writer Mono', serif; font-size: 14vw"></div>
+</div>
+	<script>
+	function pad(d) {
+		return (d < 10) ? ' ' + d.toString() : d.toString();
+	}
+	
+	function updateClock(x) {
+		
+		var start = new Date('September 1, 2023 00:00:00');
+		var today = new Date();
+		var weeks = Math.round((today-start)/ 604800000);
+		code = ['числитель', 'знаменатель'];
+		weeks = weeks;
+		months = ['ЯНВ', 'ФЕВ', 'МАР', 'АПР' ,'МАЯ', 'ИЮН' ,'ИЮЛ', 'АВГ', 'СЕН', 'ОКТ', 'НОЯ', 'ДЕК'];
+
+		document.getElementById('today').innerHTML = today.getDate()+' '+months[today.getMonth()]+' '+today.getFullYear();
+
+		if ((weeks<=17)&&(weeks>=0))
+		{
+		document.getElementById('week').innerHTML = pad(weeks+1)+" "+"неделя";
+		document.getElementById('code').innerHTML = code[weeks%2];
+		}
+		else if (weeks<0)
+		{
+		document.getElementById('week').innerHTML = "семестр";
+		document.getElementById('code').innerHTML = "не начался";
+		}
+		else
+		{
+		document.getElementById('week').innerHTML = "семестр";
+		document.getElementById('code').innerHTML = "закончился";
+		}
+
+		// call this function again in 1000ms
+		setTimeout(updateClock, 1000);
+	}
+	x = true;
+	if (x)
+	{ updateClock(x);}
+	</script>
+</body>
+</html>
