@@ -1,2 +1,3 @@
 # notion_widgets
-This repository containts widgets for my notion
+This repository contains widgets for my Notion.
+I'm pretty sure they would be useless for you.
