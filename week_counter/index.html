@@ -2,6 +2,12 @@
 <head>
     <link href="https://raw.githubusercontent.com/memementoo/notion_widgets/blob/main/week_counter/stylesheet.css" rel="stylesheet">
     <style>
+	div {
+		color: #37352F;
+		text-align: left;
+		font-size: 15px;
+		line-height: 1.8;
+	}
 	#main {
   		display: flex;
 		flex-direction: row;
@@ -12,9 +18,9 @@
 	span {
         	height: 70px;
         	width: 5px;
-        	background-color: #000000;
+        	background-color: #37352F;
         	border-radius: 99px;
-        	margin: 0 5px;
+        	margin: 0 10px;
     	}
 	@font-face {
 		font-family: 'Ai Writer Mono';
@@ -34,9 +40,9 @@
 	<div id="main">
 		<span></span>
 		<div id="wrapper">
-			<div id="today" style="text-align: left; font-family: 'Ai Writer Mono Bold', serif; font-size: 15px; line-height: 1.8"></div>
-			<div id="week" style="text-align: left; font-family: 'Ai Writer Mono', serif; font-size: 15px; line-height: 1.8"></div>
-			<div id="code" style="text-align: left; font-family: 'Ai Writer Mono', serif; font-size: 15px; line-height: 1.8"></div>
+			<div id="today" style="font-family: 'Ai Writer Mono Bold', serif"></div>
+			<div id="week" style="font-family: 'Ai Writer Mono', serif"></div>
+			<div id="code" style="font-family: 'Ai Writer Mono', serif"></div>
 		</div>
 	</div>
 	<script>
