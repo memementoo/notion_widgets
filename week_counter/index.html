@@ -24,10 +24,10 @@
 </head>
 <body>
 	<div id="main">
-		<div id="wrapper">
-			<div id="today" style="text-align: left; font-family: 'Ai Writer Mono Bold', serif; font-size: 15px; line-height: 1.5"></div>
-			<div id="week" style="text-align: left; font-family: 'Ai Writer Mono', serif; font-size: 15px; line-height: 1.5"></div>
-			<div id="code" style="text-align: left; font-family: 'Ai Writer Mono', serif; font-size: 15px; line-height: 1.5"></div>
+		<div id="wrapper" style="padding: 0 0 0 30px">
+			<div id="today" style="text-align: left; font-family: 'Ai Writer Mono Bold', serif; font-size: 15px; line-height: 1.8"></div>
+			<div id="week" style="text-align: left; font-family: 'Ai Writer Mono', serif; font-size: 15px; line-height: 1.8"></div>
+			<div id="code" style="text-align: left; font-family: 'Ai Writer Mono', serif; font-size: 15px; line-height: 1.8"></div>
 		</div>
 	</div>
 	<script>
@@ -44,12 +44,12 @@
 		weeks = weeks;
 		months = ['ЯНВ', 'ФЕВ', 'МАР', 'АПР' ,'МАЯ', 'ИЮН' ,'ИЮЛ', 'АВГ', 'СЕН', 'ОКТ', 'НОЯ', 'ДЕК'];
 
-		document.getElementById('today').innerHTML = "  "+today.getDate()+' '+months[today.getMonth()]+' '+today.getFullYear();
+		document.getElementById('today').innerHTML = today.getDate()+' '+months[today.getMonth()]+' '+today.getFullYear();
 
 		if ((weeks<=17)&&(weeks>=0))
 		{
-		document.getElementById('week').innerHTML = "  "+pad(weeks+1)+" "+"неделя";
-		document.getElementById('code').innerHTML = "  "+code[weeks%2];
+		document.getElementById('week').innerHTML = pad(weeks+1)+" "+"неделя";
+		document.getElementById('code').innerHTML = code[weeks%2];
 		}
 		else if (weeks<0)
 		{
