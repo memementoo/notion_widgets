@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'Ai Writer Mono';
+  src: url('https://raw.githubusercontent.com/memementoo/notion_widgets/blob/main/week_counter/iAWriterMonoS-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ai Writer Mono Bold';
+  url('https://raw.githubusercontent.com/memementoo/notion_widgets/blob/main/week_counter/iAWriterMonoS-Bold.ttf') format('truetype');
+  font-weight: 400;
+  font-style: bold;
+}
+
+div {
+  font-family: 'Ai Writer Mono', serif;
+  color: color: #37352F;
+}
+
+.calendar {
+  width: 390px;
+  transform-origin: left top;
+  transition: all 100ms ease 0s;
+  background-color: rgb(215, 204, 200);
+  border: 0px solid rgb(214, 215, 214);
+  transform: scale(1.37436);
+  border-radius: 1.5rem;
+  flex-direction: column;
+  display: flex;
+  overflow: hidden;
+}
+
+.calendar__month {
+  font-weight: 800;
+  padding: 1.5rem!important;
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.cal-month__previous,
+.cal-month__next {
+  text-align: center;
+  font-family: 'Ai Writer Mono Bold', serif;
+  
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+.cal-month__current {
+  text-align: center;
+  font-family: 'Ai Writer Mono Bold', serif;
+}
+
+.calendar__content {
+  background-color: rgb(249, 250, 251);
+  padding: 1rem!important;
+  flex-direction: column;
+}
+
+ul {
+  padding: 0;
+  margin: 5px 0px;
+  list-style: none;
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+  font-family: Ai Writer Mono Bold', serif;
+}
+
+li {
+  display: inline-block;
+  width: calc(100%/7)!important;
+  text-align: center;
+  cursor: pointer;
+}
+
+span {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding: 0.5rem!important;
+  width: 100%
+  display: inline-block;
+}
+
+.cal-body__day {
+  color: #C7C8C9;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cal-day__month--current {
+  color: #37352F;
+}
+
+.cal-day__day--today {
+  color: #37352F;
+  background-color: rgb(215, 204, 200);
+  border-radius: 1.5rem;
+}
+
+.cal-day__day--selected {
+  background-color: #ccc;
+}
