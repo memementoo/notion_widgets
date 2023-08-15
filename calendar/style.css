@@ -95,12 +95,13 @@ span {
   color: #37352F;
 }
 
+.cal-day__day--selected {
+  background-color: #ccc;
+}
+
+
 .cal-day__day--today {
   color: #37352F;
   background-color: rgb(215, 204, 200);
   border-radius: 1.5rem;
-}
-
-.cal-day__day--selected {
-  background-color: #ccc;
 }
