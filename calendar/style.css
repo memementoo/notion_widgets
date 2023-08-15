@@ -12,6 +12,11 @@
   font-style: bold;
 }
 
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
 div {
   font-family: 'Ai Writer Mono', serif;
   color: color: #37352F;
