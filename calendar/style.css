@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: 'Ai Writer Mono Bold';
-  url('../fonts/iAWriterMonoS-Bold.ttf') format('truetype');
+  src: url('../fonts/iAWriterMonoS-Bold.ttf') format('truetype');
   font-weight: 400;
   font-style: bold;
 }
@@ -82,6 +82,10 @@ span {
   padding: 0.5rem!important;
   width: 100%
   display: inline-block;
+}
+
+.cal-head__day {
+  font-family: Ai Writer Mono Bold', serif;
 }
 
 .cal-body__day {
