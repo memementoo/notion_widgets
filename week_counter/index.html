@@ -44,12 +44,12 @@
 		weeks = weeks;
 		months = ['ЯНВ', 'ФЕВ', 'МАР', 'АПР' ,'МАЯ', 'ИЮН' ,'ИЮЛ', 'АВГ', 'СЕН', 'ОКТ', 'НОЯ', 'ДЕК'];
 
-		document.getElementById('today').innerHTML = today.getDate()+' '+months[today.getMonth()]+' '+today.getFullYear();
+		document.getElementById('today').innerHTML = "  "+today.getDate()+' '+months[today.getMonth()]+' '+today.getFullYear();
 
 		if ((weeks<=17)&&(weeks>=0))
 		{
-		document.getElementById('week').innerHTML = pad(weeks+1)+" "+"неделя";
-		document.getElementById('code').innerHTML = code[weeks%2];
+		document.getElementById('week').innerHTML = "  "+pad(weeks+1)+" "+"неделя";
+		document.getElementById('code').innerHTML = "  "+code[weeks%2];
 		}
 		else if (weeks<0)
 		{
