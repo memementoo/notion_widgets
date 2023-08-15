@@ -2,7 +2,11 @@
 <head>
     <link href="https://raw.githubusercontent.com/memementoo/notion_widgets/blob/main/week_counter/stylesheet.css" rel="stylesheet">
     <style>
-        p{text-align: center; line-height:1vh}
+	#main {
+  		display: flex;
+  		justify-content: center;
+  		align-items: center;
+	}
 	@font-face {
 		font-family: 'Ai Writer Mono';
 		src: url('./iAWriterMonoS-Regular.ttf');
@@ -18,6 +22,7 @@
     </style>
 </head>
 <body>
+<div id="main"></div>
 <div id="today" style="text-align: left; font-family: 'Ai Writer Mono Bold', serif; font-size: 15px"></div>
 <div id="week" style="text-align: left; font-family: 'Ai Writer Mono', serif; font-size: 15px"></div>
 <div id="code" style="text-align: left; font-family: 'Ai Writer Mono', serif; font-size: 15px"></div>
