@@ -6,7 +6,7 @@
 }
 @font-face {
 	font-family: 'Ai Writer Mono Bold';
-	url('../fonts/iAWriterMonoS-Bold.ttf') format('truetype');
+	src: url('../fonts/iAWriterMonoS-Bold.ttf') format('truetype');
 	font-weight: 400;
 	font-style: bold;
 }
